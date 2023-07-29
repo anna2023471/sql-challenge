@@ -1,4 +1,4 @@
--- Q1 list emp. numner, last name, first name, sex, salary of each employee
+-- Q1 list emp. number, last name, first name, sex, salary of each employee
 SELECT e.emp_no, e.first_name, e.last_name, e.sex
 FROM employee e
 JOIN salary s
