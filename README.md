@@ -26,4 +26,4 @@ Data folder:
 
 Code in line 10 in query.sql came from https://w3resource.com/PostgreSQL/split_part-function.php
 
-QuickDBD was used to create tables and relationships, and the export file was used in schema.sql to create the employee_db schema
+QuickDBD was used to create tables and relationships, and the export file was used in schema.sql to create the employee_db schema. The exported was edited to add primary keys to the dept_manager and dept_employee tables.
