@@ -59,11 +59,15 @@ REFERENCES "department" ("dept_no");
 ALTER TABLE "dept_manager" ADD CONSTRAINT "fk_dept_manager_emp_no" FOREIGN KEY("emp_no")
 REFERENCES "employee" ("emp_no");
 
+ALTER TABLE "dept_manager" ADD PRIMARY KEY(dept_no, emp_no);
+
 ALTER TABLE "dept_employee" ADD CONSTRAINT "fk_dept_employee_emp_no" FOREIGN KEY("emp_no")
 REFERENCES "employee" ("emp_no");
 
 ALTER TABLE "dept_employee" ADD CONSTRAINT "fk_dept_employee_dept_no" FOREIGN KEY("dept_no")
 REFERENCES "department" ("dept_no");
+
+ALTER TABLE "dept_employee" ADD PRIMARY KEY(dept_no, emp_no);
 
 SELECT * from department;
 
