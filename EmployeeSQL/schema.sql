@@ -53,6 +53,8 @@ REFERENCES "title" ("title_id");
 ALTER TABLE "salary" ADD CONSTRAINT "fk_salary_emp_no" FOREIGN KEY("emp_no")
 REFERENCES "employee" ("emp_no");
 
+ALTER TABLE "salary" ADD PRIMARY KEY(emp_no, salary);
+
 ALTER TABLE "dept_manager" ADD CONSTRAINT "fk_dept_manager_dept_no" FOREIGN KEY("dept_no")
 REFERENCES "department" ("dept_no");
 
